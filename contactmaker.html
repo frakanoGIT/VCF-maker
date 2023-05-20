@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>VCF Maker</title>
+        <link rel="stylesheet" href="./contactmaker.css">
+    </head>
+    <body>
+        <form id="form">
+            <div class="contactName">
+                <label for="contact-name">Contact Name</label>
+                <input type="text" id="contact-name"></input>
+                <span>-</span>
+                <input type="number" id="from-number"></input>
+                </div>
+            </div>
+            <div class="main">
+                <div class="text-area">
+                    <label for="user-input">INPUT</label>
+                    <textarea type="text" id="user-input"></textarea>
+                </div>
+                <div class="text-area">
+                    <label for="output">OUTPUT</label>
+                    <textarea id="output"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <button form="form" type="submit">Generate</button>
+                <a href="" id="download">Download</a>
+            </div>
+        </form>
+    </body>
+    <script src="./contactmaker.js"></script>

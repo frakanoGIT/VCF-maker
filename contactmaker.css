@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+#from-number {
+    width: 75px;
+}
+label, textarea {
+    display: block;
+}
+
+.text-area {
+    display: inline-block;
+}
+
+textarea {
+    height: 300px;
+    width: 200px;
+    resize: none;
+}
