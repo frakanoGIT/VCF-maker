@@ -18,9 +18,9 @@ function listenInput(e) {
 
 function download(text, filename){
     if (text !== '') {
-        var blob = new Blob([text], {type: "text/plain"});
-        var url = window.URL.createObjectURL(blob);
-        var a = document.createElement("a");
+        let blob = new Blob([text], {type: "text/plain"});
+        let url = window.URL.createObjectURL(blob);
+        let a = document.createElement("a");
         a.href = url;
         a.download = filename;
         a.click();
@@ -37,11 +37,6 @@ function generateOutput(arr, name, from) {
         })
     )
 }
-// function downloadMaker(value) {
-//     const file = new Blob(value, { type: 'text/plain' });
-//     downloadLink.href = URL.createObjectURL(file);
-//     downloadLink.download = "contact.vcf";
-// }
 
 form.addEventListener('submit',listenInput);
 downloadLink.addEventListener('click', e => {
