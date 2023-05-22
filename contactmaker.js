@@ -30,11 +30,7 @@ function download(text, filename){
 
 function generateOutput(arr, name, from) {
     return (
-        arr.map((num, i) => {
-            return (
-                `BEGIN:VCARD\nN:;${name}-${i + from};;;\nTEL;type=CELL;type=VOICE;type=pref:+${num}\nEND:VCARD`
-            )
-        })
+        arr.map((num, i) => `BEGIN:VCARD\nN:;${name}-${i + from};;;\nTEL;type=CELL;type=VOICE;type=pref:+${num}\nEND:VCARD`)
     )
 }
 
@@ -43,6 +39,3 @@ downloadLink.addEventListener('click', e => {
     e.preventDefault();
     download(output.value, 'contacts.vcf');
 })
-
-
-  
